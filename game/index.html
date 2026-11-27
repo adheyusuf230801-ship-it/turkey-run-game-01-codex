@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#171b22">
+    <title>Feather Fugitive — a turkey escape game</title>
+    <style>
+      * { box-sizing: border-box; }
+      html, body { margin: 0; min-height: 100%; }
+      body {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 20px;
+        background: #171b22;
+        color: #d8d1bd;
+        font-family: system-ui, sans-serif;
+      }
+      main { width: min(100%, 960px); }
+      canvas {
+        display: block;
+        width: 100%;
+        height: auto;
+        background: #b9d9df;
+        border-radius: 8px;
+        box-shadow: 0 16px 60px #0006;
+        touch-action: none;
+      }
+      canvas:focus-visible { outline: 3px solid #f5c94e; outline-offset: 4px; }
+      footer { margin-top: 14px; text-align: center; font-size: 12px; line-height: 1.7; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <canvas id="game" width="960" height="540" tabindex="0" aria-label="Feather Fugitive: a turkey escape runner. Controls listed below.">
+        Feather Fugitive requires a browser with canvas support.
+      </canvas>
+      <footer>Enter: start · Space / ↑ / W / click / tap: jump (twice!) · ↓ / S: duck / slide · P: pause · M: mute · R: restart on end screens</footer>
+    </main>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
